@@ -27,7 +27,8 @@ sniffer:
 tun:
   enable: true
   stack: system
-  device: mihomo
+  listen: 0.0.0.0:1053
+  #device: mihomo
   dns-hijack:
     - any:53
     - tcp://any:53
