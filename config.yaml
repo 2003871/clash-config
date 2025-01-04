@@ -70,7 +70,6 @@ proxy-providers:
 # 锚点 - 节点筛选组
 FilterHK: &FilterHK '^(?=.*(香港|HK|Hong|🇭🇰))^(?!.*(网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
 FilterJP: &FilterJP '^(?=.*(日本|JP|Japan|🇯🇵))^(?!.*(网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
-FilterKR: &FilterKR '^(?=.*(韩国|韓|KR|Korea|🇰🇷))^(?!.*(网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
 FilterSG: &FilterSG '^(?=.*(新加坡|狮城|SG|Singapore|🇸🇬))^(?!.*(网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
 FilterUS: &FilterUS '^(?=.*(美国|US|United States|America|🇺🇸))^(?!.*(网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
 FilterUK: &FilterUK '^(?=.*(英国|UK|United Kingdom|🇬🇧))^(?!.*(网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
@@ -95,23 +94,17 @@ proxy-groups:
   # 自动选择
   - {name: 🇭🇰 - 自动选择, <<: *Auto, filter: *FilterHK}
   - {name: 🇯🇵 - 自动选择, <<: *Auto, filter: *FilterJP}
-  - {name: 🇰🇷 - 自动选择, <<: *Auto, filter: *FilterKR}
   - {name: 🇸🇬 - 自动选择, <<: *Auto, filter: *FilterSG}
   - {name: 🇺🇸 - 自动选择, <<: *Auto, filter: *FilterUS}
   - {name: 🇬🇧 - 自动选择, <<: *Auto, filter: *FilterUK}
-  - {name: 🇫🇷 - 自动选择, <<: *Auto, filter: *FilterFR}
-  - {name: 🇩🇪 - 自动选择, <<: *Auto, filter: *FilterDE}
   - {name: 🇹🇼 - 自动选择, <<: *Auto, filter: *FilterTW}
 
   # 手动选择
   - {name: 🇭🇰 - 手动选择, <<: *Select, filter: *FilterHK}
   - {name: 🇯🇵 - 手动选择, <<: *Select, filter: *FilterJP}
-  - {name: 🇰🇷 - 手动选择, <<: *Select, filter: *FilterKR}
   - {name: 🇸🇬 - 手动选择, <<: *Select, filter: *FilterSG}
   - {name: 🇺🇸 - 手动选择, <<: *Select, filter: *FilterUS}
   - {name: 🇬🇧 - 手动选择, <<: *Select, filter: *FilterUK}
-  - {name: 🇫🇷 - 手动选择, <<: *Select, filter: *FilterFR}
-  - {name: 🇩🇪 - 手动选择, <<: *Select, filter: *FilterDE}
   - {name: 🇹🇼 - 手动选择, <<: *Select, filter: *FilterTW}
   - {name: Others - 手动选择, <<: *Select, filter: *FilterOthers}
 
