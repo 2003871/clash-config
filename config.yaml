@@ -1,3 +1,4 @@
+global-ua: clash
 mixed-port: 7890
 allow-lan: true
 unified-delay: true
