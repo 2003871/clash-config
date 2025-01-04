@@ -101,7 +101,7 @@ NodeParam: &NodeParam {type: http, interval: 86400, health-check: {enable: true,
 # 节点订阅
 proxy-providers: 
   我的节点:
-    url: '替换订阅链接'
+    url: 'https://fba01.fbsubcn01.cc:2096/flydsubal/ynq01tvsjt0jgkhc?clash=1&extend=1'
     <<: *NodeParam
     path: './proxy_provider/providers.yaml'
 
