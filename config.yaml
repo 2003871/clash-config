@@ -5,8 +5,8 @@ unified-delay: true
 tcp-concurrent: true
 external-controller: 0.0.0.0:9090
 ### 如果使用的是裸核，需要将下面的注释去掉，方便ui界面的使用
-# external-ui: ui
-# external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
+external-ui: ui
+external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
 find-process-mode: strict
 global-client-fingerprint: chrome
 profile:
@@ -126,7 +126,7 @@ proxy-groups:
   - {name: 手动选择, type: select, proxies: [🇭🇰 - 手动选择, 🇯🇵 - 手动选择, 🇸🇬 - 手动选择, 🇺🇸 - 手动选择, 🇬🇧 - 手动选择, 🇹🇼 - 手动选择, Others - 手动选择], url: https://cp.cloudflare.com, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Cylink.png}
   - {name: 自动选择, type: select, proxies: [🇭🇰 - 自动选择, 🇯🇵 - 自动选择, 🇸🇬 - 自动选择, 🇺🇸 - 自动选择, 🇬🇧 - 自动选择, 🇹🇼 - 自动选择], url: https://cp.cloudflare.com, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png}
   - {name: ✈️ 电报信息, type: select, proxies: [🎯 节点选择, 🇭🇰 - 自动选择, 🇯🇵 - 自动选择, 🇸🇬 - 自动选择, 🇺🇸 - 自动选择, 🇬🇧 - 自动选择, 🇹🇼 - 自动选择], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png}
-  - {name: 🤖 AIGC, type: select, proxies: [🇺🇸 - 自动选择, 🎯 节点选择, 🇭🇰 - 自动选择, 🇯🇵 - 自动选择, 🇸🇬 - 自动选择, 🇺🇸 - 自动选择, 🇬🇧 - 自动选择, 🇹🇼 - 自动选择], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png}
+  - {name: 🤖 AIGC, type: select, proxies: [🇺🇸 - 自动选择, 🎯 节点选择, 🇭🇰 - 自动选择, 🇯🇵 - 自动选择, 🇸🇬 - 自动选择, 🇬🇧 - 自动选择, 🇹🇼 - 自动选择], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png}
   - {name: 🍎 苹果服务, type: select, proxies: [DIRECT, 🎯 节点选择, 🇭🇰 - 自动选择, 🇯🇵 - 自动选择, 🇸🇬 - 自动选择, 🇺🇸 - 自动选择, 🇬🇧 - 自动选择, 🇹🇼 - 自动选择], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png}
   - {name: Ⓜ️ 微软服务, type: select, proxies: [DIRECT, 🎯 节点选择, 🇭🇰 - 自动选择, 🇯🇵 - 自动选择, 🇸🇬 - 自动选择, 🇺🇸 - 自动选择, 🇬🇧 - 自动选择, 🇹🇼 - 自动选择], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png}
 
